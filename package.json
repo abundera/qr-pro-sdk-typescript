@@ -1,0 +1,48 @@
+{
+  "name": "@abundera/qr-pro",
+  "version": "0.1.0",
+  "description": "Official TypeScript SDK for Abundera QR Pro — dynamic QR codes, analytics, webhooks.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "qr",
+    "qr-code",
+    "dynamic-qr",
+    "abundera",
+    "analytics",
+    "webhooks"
+  ],
+  "author": "Abundera, Inc.",
+  "license": "MIT",
+  "homepage": "https://pro.qr.abundera.ai/docs/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abundera/qr-pro-sdk-typescript"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "vitest": "^3.2.4",
+    "@types/node": "^20.11.0"
+  }
+}
